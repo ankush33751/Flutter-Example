@@ -1,4 +1,4 @@
-# trnasitionanimationapp
+# Transition Animation App
 
 A new Flutter project.
 

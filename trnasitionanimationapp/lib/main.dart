@@ -98,19 +98,8 @@ _controllerBlue.forward();
                 height: 200,
                 child:Stack(
             children:[
-            FadeTransition(
-              
-              opacity: CurvedAnimation(parent: _animation,curve: Curves.bounceInOut),
-              child: Container(
-                
-                
-                decoration:BoxDecoration(
-                  color: Colors.green,
-                  border:Border.all(width:0),
-                  shape: BoxShape.circle
-                ),
-              )),
-              /* AnimatedBuilder(
+           
+              AnimatedBuilder(
                 animation: _animationTween,
                 builder:(context,widget)=>
                Container(
@@ -119,9 +108,9 @@ _controllerBlue.forward();
                  color: _animationTween.value, 
                  border: Border.all(width:0),
                   shape: BoxShape.circle
-                  \
+          
                 ),
-              )) */
+              )), 
               SizeTransition(axis:Axis.vertical,
               sizeFactor: CurvedAnimation(curve: Curves.easeInOut,parent: _controllerGreen),
               child:Icon(Icons.access_alarms,size: 60,)),
